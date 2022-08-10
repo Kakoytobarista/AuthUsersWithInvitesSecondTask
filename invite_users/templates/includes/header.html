@@ -12,7 +12,7 @@
                     {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link {% if view_name == 'rating:referral_code' %}active{% endif %}"
-                               href="{% url 'rating:referral_code' %}">Rating</a>
+                               href="{% url 'rating:referral_code' %}">Referral code</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if view_name == 'rating:scores' %}active{% endif %}"

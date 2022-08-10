@@ -27,5 +27,5 @@ class ReferralCodeView(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         """overridden get_context method"""
         context = super().get_context_data(**kwargs)
-        context['user'] = self.request.data['user']
+        context['user'] = self.request.user
         return context
