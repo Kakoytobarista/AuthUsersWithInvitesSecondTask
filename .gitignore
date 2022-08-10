@@ -1,0 +1,6 @@
+invite_users/.env
+venv
+.idea
+
+
+invite_users/sent_emails/
