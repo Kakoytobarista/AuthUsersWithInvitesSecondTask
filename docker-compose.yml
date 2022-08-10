@@ -21,6 +21,7 @@ services:
       - |
         python manage.py makemigrations
         python manage.py migrate
+        python manage.py loaddata db.json
         python manage.py runserver 0.0.0.0:8000
     container_name: web
     ports:
@@ -33,4 +34,3 @@ services:
 
 volumes:
   postgres_data:
-  # static:
