@@ -12,3 +12,9 @@ def csrf_failure(request, reason='') -> HttpResponse:
 
 def server_error(request) -> HttpResponse:
     return render(request, 'core/500.html', status=500)
+
+
+def redirect(request) -> HttpResponse:
+    if request.user.is_authenticated:
+        return render(request, 'rating/scores.html')
+    return render(request, 'users/login.html')

@@ -3,10 +3,11 @@ from django.urls import path, include
 from django.conf.urls.static import static
 
 from invite_users import settings
-from core.views import page_not_found
+from core.views import page_not_found, redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('core.urls', namespace='core')),
     path('auth/', include('users.urls', namespace='users')),
     path('rating/', include('rating.urls', namespace='rating')),
 ]
