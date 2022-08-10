@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
 
 def page_not_found(request, exception=None) -> HttpResponse:
@@ -14,7 +14,7 @@ def server_error(request) -> HttpResponse:
     return render(request, 'core/500.html', status=500)
 
 
-def redirect(request) -> HttpResponse:
+def redirect_from_index(request) -> HttpResponse:
     if request.user.is_authenticated:
-        return render(request, 'rating/scores.html')
-    return render(request, 'users/login.html')
+        return redirect('rating:scores')
+    return redirect('users:login')

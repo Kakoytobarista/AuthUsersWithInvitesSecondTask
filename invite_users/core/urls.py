@@ -5,5 +5,5 @@ from . import views
 app_name = 'core'
 
 urlpatterns = [
-    path('', views.redirect, name='redirect')
+    path('', views.redirect_from_index, name='redirect')
 ]
