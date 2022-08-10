@@ -3,16 +3,17 @@
     Top scores
 {% endblock %}
 {% block content %}
-<div class="container py-5">
-  <h1 id="h1_score">Rating:</h1>
-  <br />
-  <p>
-    <ul class="older">
-        {% for user in users %}
-      <li>{{ user.username }} - {{ user.score }}<li/>
-    {% endfor %}
-    </ul>
-  <p/>
-</div>
+    <div class="container py-5">
+        <h1 id="h1_score">Rating:</h1>
+        <br/>
+        <p>
+        <ul class="older">
+            {% for user in users %}
+                <li>{{ user.username }} -{{ user.score }}
+                <li/>
+            {% endfor %}
+        </ul>
+        <p/>
+    </div>
 
 {% endblock %}

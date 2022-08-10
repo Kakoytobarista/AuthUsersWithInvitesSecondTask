@@ -2,7 +2,7 @@
 {% load static %}
 
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>{{ title }}</title>
-  </head>
-  <body>
-    <header>
+</head>
+<body>
+<header>
     {% include "includes/header.html" %}
-    </header>
-    <main>
+</header>
+<main>
     {% block content %}
 
     {% endblock %}
-    </main>
-    {% include "includes/footer.html" %}
-  </body>
+</main>
+{% include "includes/footer.html" %}
+</body>
 </html>
