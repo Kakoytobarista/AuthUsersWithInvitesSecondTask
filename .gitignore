@@ -1,6 +1,6 @@
 invite_users/.env
 venv
 .idea
-
+.env
 
 invite_users/sent_emails/

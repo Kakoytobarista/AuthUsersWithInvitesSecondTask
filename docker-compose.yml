@@ -15,12 +15,9 @@ services:
 
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
     container_name: web
     ports:
       - "8000:8000"
-    # volumes:
-    #   - ./static:/code/static/
     depends_on:
       - db
     env_file:
@@ -29,4 +26,3 @@ services:
 
 volumes:
   postgres_data:
-  # static:

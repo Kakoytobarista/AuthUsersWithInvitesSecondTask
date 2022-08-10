@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_KEY',
                        default='django-insecure-3bo0xtjgg3(_a%o1b#%1os_(#5yu$4tr^=xb&%^8x@f__0np@5')
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1']
 

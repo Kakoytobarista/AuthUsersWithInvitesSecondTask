@@ -9,3 +9,4 @@ CMD [ "sh", "-c", \
 && python3 manage.py collectstatic --noinput" \
 ]
 
+CMD ["sh", "-c", "python manage.py runserver 0.0.0.0:8000"]
