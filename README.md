@@ -12,4 +12,9 @@ $ cd AuthUsersWithInvitedSecondTask
 ```
 $ docker-compose up -d
 ```
-3. Open 0.0.0.0:8000 url in browser
+3. Load data to project:
+```
+$ cd invite_users 
+$ python manage.py loaddata db.json
+```
+4. Open 0.0.0.0:8000 url in browser
